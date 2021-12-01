@@ -1,0 +1,363 @@
+@font-face {
+    font-family: 'Gilroy-Regular';
+    src: url('fonts/Gilroy.ttf');
+}
+@font-face {
+    font-family: 'Gilroy-Semibold';
+    src: url('fonts/Gilroy-SemiBold.ttf');
+}
+@font-face {
+    font-family: 'Gilroy-Bold';
+    src: url('fonts/Gilroy-Bold.ttf');
+}
+@font-face {
+    font-family: 'Gilroy-Medium';
+    src: url('fonts/Gilroy-Medium.ttf');
+}
+.font-Regular{
+    font-family: 'Gilroy-Regular';
+}
+.font-Semibold{
+    font-family: 'Gilroy-Semibold';
+}
+.font-Bold{
+    font-family: 'Gilroy-Bold';
+}
+.font-Medium{
+    font-family: 'Gilroy-Medium';
+}
+*::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  *::-webkit-scrollbar-track {
+    border-radius: 10px;
+    /* background: rgba(0, 0, 0, 0.1); */
+    background-color: transparent;
+
+}
+  *::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.2);
+  }
+  *::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.4);
+  }
+  *::-webkit-scrollbar-thumb:active {
+    background: rgba(0, 0, 0, 0.9);
+  }
+/* basic rules */
+
+html{
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+}
+body{
+    font-family: 'Gilroy-Regular';
+    height:auto;
+}
+p,h1,h2,h3,h4,h5{
+    margin-bottom: 0;
+}
+input:focus{
+    outline: none;
+}
+.text-grey{
+    color: black;
+    opacity: 0.5;
+}
+.text-theme{
+    color: #9f40c4;
+}
+.theme_bg{
+    background:#9f40c4;
+}
+.theme_lightbg{
+ background-color: #F7F2FB;
+}
+.para_border{
+    border: none;
+    border-bottom: 1.5px solid black;
+}
+.container-sk{
+    /* max-width: 1250px;
+    margin-left: auto;
+    margin-right: auto; */
+
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    padding-left: 100px;
+    padding-right: 100px;
+    overflow: hidden;
+}
+.s-pr-0{
+    padding-right: 0  !important;
+}
+.s-pl-0{
+    padding-left: 0 !important;
+}
+.res-w-75{
+  width: 75%;
+}
+.res-pt-20{
+  padding-top: 5rem;
+}
+/*header style*/
+.navbar-toggler {
+  font-size: 1rem !important;
+  border: none !important;
+}
+.navbar{
+    background-color: transparent !important; 
+    padding: 1rem 3rem !important;
+  }
+  
+  .navbar-nav{
+    position: absolute;
+    right: 0;
+  }
+  .navbar-light .navbar-nav  {
+      color: rgba(0,0,0,.5);
+      padding: 30px !important;
+      font-size: 12px !important;
+  }
+  .header-logo{
+    width: 115px;
+  }
+  .nav-link{
+    padding: 10px 30px !important;
+    font-weight: 600;
+    color: black !important;
+  }
+  .navbar-light .navbar-nav .active>.nav-link{
+   border: none;
+  
+  }
+  .nav-link:after {
+      content: ""; /* This is necessary for the pseudo element to work. */ 
+      display: block; /* This will put the pseudo element on its own line. */
+      margin: 0; /* This will center the border. */
+      width: 0%; /* Change this to whatever width you want. */
+      padding-top: 5px; /* This creates some space between the element and the border. */
+      border-bottom: 2px solid #9f40c4; /* This creates the border. Replace black with whatever color you want. */
+      transition: .2s;
+  }
+  
+  .navbar-light .navbar-nav .active>.nav-link:after {
+      content: ""; /* This is necessary for the pseudo element to work. */ 
+      display: block; /* This will put the pseudo element on its own line. */
+      margin: 0; /* This will center the border. */
+      width: 100%; /* Change this to whatever width you want. */
+      padding-top: 5px; /* This creates some space between the element and the border. */
+      border-bottom: 2px solid #9f40c4; /* This creates the border. Replace black with whatever color you want. */
+  }
+  
+  .nav-link:hover::after { 
+    content: ""; /* This is necessary for the pseudo element to work. */ 
+      display: block; /* This will put the pseudo element on its own line. */
+      margin: 0 ; /* This will center the border. */
+      width: 100%; /* Change this to whatever width you want. */
+      padding-top: 5px; /* This creates some space between the element and the border. */
+      border-bottom: 2px solid #9f40c4; /* This creates the border. Replace black with whatever color you want. */
+   }
+   .header-button{
+    border: none;
+      height: 40px;
+      font-size: 12px;
+      color: white;
+      border-radius: 25px;
+      width: 140px;
+      cursor: pointer;
+   }
+  /* banner */
+  .banner_mask{
+    position: absolute;
+    top: -142px;
+    width: 500px;
+    left: -156px;
+
+  }
+  .banner_text{
+      font-size: 55px;
+      line-height: 60px;
+  }
+  .banner_textinput{
+      margin: 20px 0;
+  }
+  .banner_textinput input{
+      width: 400px;
+      height: 45px;
+      padding: 5px 20px;
+      border: 1px solid #ddd;
+      margin-right: 15px;
+  }
+  .banner_textinput input::placeholder{
+      font-size: 12px;
+  }
+  .banner_textinput button{
+    width: 60px;
+    height: 45px;
+  }
+  .banner_side_img{
+      width: 75%;
+  }
+  .partners_div{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  }
+  .partners_div img{
+      width: 5rem;
+  }
+  .Purpose_icons{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+  .Institute_icons{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;  
+  }
+  .feature_img{
+    max-width: 100%;
+   width: 100%;
+    z-index: 3;
+  }
+  .plans_container{
+      background-color: #7A21BB;
+      padding: 50px 130px;
+  }
+  .plan_ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #7A21BB;
+    width: fit-content;
+    margin: 20px auto;
+    padding: 2px;
+    border-radius: 25px;
+    margin-bottom: 30px !important;
+  }
+  .plan_ul li button{
+    color: white;
+    font-size: 13px;
+    padding: 10px 45px;
+    font-family: 'Gilroy-Semibold';
+  }
+  .plan_ul li button.active{
+    background-color: white;
+    border-radius: 25px;
+    color: #7A21BB;
+  }
+  .plan_card{
+    width: fit-content;
+    margin: auto;
+    text-align: left;
+  }
+  .plan_card button{
+      background-color: #7A21BB38;
+      width: 130%;
+      border-radius: 25px;
+      padding: 10px;
+      font-size: 12px;
+      color: #7A21BB;
+      font-family: 'Gilroy-Semibold';
+      box-shadow: 10px 10px 40px #7A21BB38;
+
+  }
+  .plan_card ul{
+    list-style-type: disc;
+    font-size: 12px;
+    font-family: 'Gilroy-Semibold';
+    padding-left: 20px;
+  }
+  .plan_card ul li{
+      margin: 20px 0px;
+  }
+  .testi_padding{
+      padding-right: 0 !important;
+  }
+  .testimonial_container{
+      overflow-y: hidden;
+      overflow-x: auto;
+      width: 100%;
+      display: flex;
+      align-items: center;
+     
+  }
+  .testi_card{
+    box-shadow: 6px 6px 28px #00000014;
+    border-radius: 47px;
+    background-color: white;
+    text-align: center;
+    padding: 25px;
+    min-width: 350px;
+    max-width: 350px;
+    margin: 30px 13px;
+  }
+  /* footer */
+  footer{
+      background-color: #7A21BB;
+       padding: 50px 25px 30px 25px;
+       text-align: center;
+  }
+ .footer_link_div{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     width: 60%;
+     margin: auto;
+ }
+  .footer_links{
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+  }
+  .footer_links:hover{
+      color: white;
+      text-decoration: underline;
+  }
+  .footer_social_div{
+    text-align: center;
+    justify-content: center;
+    margin: 40px 0;
+}
+  .footer_social_div img{
+      width: 20px;
+      height: 20px;
+      margin-right: 25px;
+  }
+
+  /* slick */
+  .slick-prev, .slick-next{
+    background-color:  white !important;
+    border: 1px solid #ddd !important;
+    color: transparent !important;
+    border-radius: 50%;
+    background-size: 100% !important;
+    background-repeat: no-repeat !important;
+    width: 35px !important;
+    height: 35px !important;
+  }
+  .slick-prev {
+    left: 0 !important;
+    top:120% !important;
+    background-image: url('../img/Group\ 4091.png') !important;
+    
+    
+}
+.slick-next {
+  left: 45px !important;
+  top:120% !important ;
+  background-image: url('../img/Group\ 4092.png') !important;
+
+}
+.slick-prev:before, .slick-next:before {
+  color: transparent !important;
+  background: transparent !important;
+  border-radius: 50%;
+  
+}

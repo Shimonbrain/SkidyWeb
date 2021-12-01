@@ -1,0 +1,87 @@
+@media (max-width:767px) {
+    .navbar {
+        background-color: transparent !important;
+        padding: 1rem 1rem !important;
+    }
+    .container-sk {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    .banner_text {
+        font-size: 28px;
+        line-height: 35px;
+    }
+    .banner_textinput input {
+        width: 70%;
+        height: 40px;
+    }
+    .banner_textinput button {
+        width: 60px;
+        height: 40px;
+    }
+    .banner_side_img{
+        width: 100%;
+        margin: 50px auto !important;
+    }
+    .partners_div {
+        display: block;
+    }
+    .partners_div img {
+        width: 6rem;
+        margin: 20px 0;
+    }
+    .res-my-4{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .res-w-75{
+        width: 100%;
+      }
+      .res-pt-20{
+        padding-top: 0;
+        padding-bottom: 6rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+      }
+      .banner_margin{
+          margin-top: 11% !important;
+      }
+    .row{
+        width: 100%;
+        margin: auto;
+    }
+    .s-pr-0 {
+        padding-left: 0 !important;
+    }
+    .s-pl-0 {
+        padding-right: 0 !important;
+    }
+    .plans_container {
+        background-color: #7A21BB;
+        padding: 50px 20px;
+    }
+    .plan_card {
+        width: 70%;
+        margin: 40px auto;
+        text-align: left;
+    }
+    .plan_card button {
+        background-color: #7A21BB38;
+        width: 98%;
+    }
+    .testi_padding{
+        padding: 25px !important;
+        overflow: hidden;
+    width: 100%;
+    }
+    .footer_link_div {
+        display: block;
+        width: 100%;
+        margin: auto;
+    }
+
+    .footer_links {
+        display: block;
+        margin-bottom: 20px;
+    }
+}
